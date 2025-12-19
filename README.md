@@ -1,45 +1,29 @@
-# Healthcare Diabetes Risk Prediction
+# Healthcare Diabetes Risk Prediction - Group 16
 
-## 1. Problem Formulation
-This project aims to predict diabetes risk using healthcare survey data.
-The task is formulated as a binary classification problem.
+## 📝 Project Overview
+This project focuses on predicting diabetes risk using the **BRFSS 2015** dataset. By leveraging Machine Learning and Deep Learning (MLP), we aim to identify key health indicators that contribute to diabetes and build a predictive system to assist in early medical screening.
 
-## 2. Inputs and Outputs
-- Input: Health indicators (BMI, Age, GenHlth, HighBP, etc.)
-- Output: Diabetes_binary (0: No, 1: Yes)
+## 👥 Team Members (Group 16)
+* **Khúc Ngọc Anh** - 2201140003
+* **Lê Thị Khánh Linh** - 2201140048
+* **Trần Thanh Phúc** - 2201140064
 
-## 3. Dataset
-- Number of samples: 269,131
-- Number of features: 21
-- Class imbalance exists
+## 📊 Key Findings from EDA
+Based on our analysis, the most significant predictors for diabetes are:
+- **BMI (Body Mass Index):** A strong positive correlation with diabetes risk.
+- **GenHlth (General Health):** Patient's self-reported health status is a high-impact feature.
+- **Age:** Risk significantly increases in older age brackets.
 
-## 4. Data Preparation
-- Data inspection and cleaning
-- Feature scaling
-- Data visualization (distribution, correlation matrix)
+## 🤖 Models Implemented
+We compared three different approaches to find the most reliable model for healthcare deployment:
+1. **Multi-layer Perceptron (MLP):** Our primary Deep Learning model, optimized for binary classification.
+2. **Random Forest Classifier:** Used to handle non-linear relationships and provide feature importance.
+3. **Logistic Regression:** Served as the baseline model for performance comparison.
 
-## 5. Model and Optimization
-- Models: Logistic Regression, Random Forest, MLP
-- Main model: Multilayer Perceptron (MLP)
-- Optimizer: Adam
-- Loss function: Binary Cross-Entropy
-- Threshold tuning applied
+## 📈 Performance Summary
+The **MLP model** outperformed others in terms of stability and **Recall** for the high-risk class. In medical screening, achieving a high Recall is crucial to ensure that potential diabetic patients are not missed during the initial phase.
 
-## 6. Performance Evaluation
-- Confusion matrix
-- ROC curve (AUC = 0.818)
-- Precision–Recall analysis
-
-## 7. Inference
-The trained model can be used to predict diabetes risk on new data.
-
-## 8. Conclusion
-The MLP model achieves high recall for diabetic cases and is suitable
-for healthcare screening applications.
-
----
-
-## Setup Instructions
-
-```bash
-pip install -r requirements.txt
+## 🛠️ Installation & Usage
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
