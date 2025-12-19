@@ -1,18 +1,22 @@
-# Python
+# Python bytecode 
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Jupyter Notebook
+# Jupyter Notebook checkpoints 
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 
-# Environments
+# Virtual Environments 
+venv/
+env/
 .env
 .venv
-env/
-venv/
 
-# Data (Nếu bạn không muốn upload file dữ liệu nặng lên GitHub)
-*.csv
-*.xlsx
+# OS generated files 
+.DS_Store
+.DS_Store?
+Thumbs.db
+
+# Data files 
+# *.csv
